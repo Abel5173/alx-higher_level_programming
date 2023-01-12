@@ -2,6 +2,8 @@
 def best_score(a_dictionary):
     m = 0
     b = ''
+    if not a_dictionary:
+        return None
     for i in a_dictionary:
         if a_dictionary[i] > m:
             m = a_dictionary[i]
